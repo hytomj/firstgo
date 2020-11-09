@@ -5,8 +5,11 @@ import (
 )
 
 func showArray() {
-	s := [5]int{11, 22, 99, 8, 6}
-	fmt.Println(s)
+	s := []string{"java", "python", "golang"}
+	//s := [...]int{11, 22, 99, 8, 6}
+	for i, v := range s {
+		fmt.Println(i, "->", v)
+	}
 }
 
 func main() {
